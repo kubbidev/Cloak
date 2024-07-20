@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "me.kubbidev.cloak.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+
+  ],
+  "client": [
+    "MixinCloakFeatureRenderer",
+    "MixinPlayerListEntry"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

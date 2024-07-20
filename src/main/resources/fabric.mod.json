@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "cloak",
+  "version": "${version}",
+  "name": "Cloak",
+  "icon": "assets/cloak/icon.png",
+  "description": "Cloak is a Minecraft Mod that lets you use capes from Optifine.",
+  "authors": [
+    {
+      "name": "kubbidev",
+      "contact": {
+        "sources": "https://github.com/kubbidev",
+        "homepage": "https://kubbidev.com"
+      }
+    }
+  ],
+  "license": "APACHE-2.0",
+  "contact": {
+    "homepage": "https://kubbidev.com",
+    "sources": "https://github.com/kubbidev/Cloak.git",
+    "issues": "https://github.com/kubbidev/Cloak/issues"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.kubbidev.cloak.Cloak"
+    ],
+    "client": [
+      "me.kubbidev.cloak.CloakClient"
+    ]
+  },
+  "mixins": [
+    "cloak.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
